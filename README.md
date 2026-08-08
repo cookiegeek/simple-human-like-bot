@@ -36,24 +36,43 @@ Clone the repository and navigate to the project directory:
 ```bash
 git clone [https://github.com/cookiegeek/simple-human-like-bot.git](https://github.com/cookiegeek/simple-human-like-bot.git)
 cd simple-human-like-bot
-3. Install Dependencies
-Bash
-pip install -r requirements.txt
-4. Configuration
-Open people.py and replace the TOKEN variable with your Telegram Bot token from @BotFather:
+```
 
-Python
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configuration
+
+Open `people.py` and replace the `TOKEN` variable with your Telegram Bot token from [@BotFather](https://t.me/BotFather):
+
+```python
 TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
-5. Run
+```
+
+### 5. Run
+
 Start the bot:
 
-Bash
+```bash
 python people.py
-Project Structure
-Plaintext
+```
+
+---
+
+## Project Structure
+
+```text
 simple-human-like-bot/
 ├── people.py          # Main bot logic, typing simulation, and regex handlers
 ├── requirements.txt   # Required Python libraries
 └── README.md          # Documentation
-License
-This project is open-source and available under the MIT License.
+```
+
+---
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
