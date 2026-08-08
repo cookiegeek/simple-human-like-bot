@@ -1,6 +1,6 @@
 # Simple Human-like Telegram Bot
 
-A lightweight, experimental Telegram bot built with Python (`pyTelegramBotAPI`) that realistically simulates human conversation patterns. Designed to mimic natural chatting behavior, it features dynamic reading and typing delays, keyboard typo simulations with auto-corrections, message splitting, and fault-tolerant API handling.
+A lightweight, experimental Telegram bot built with Python (`pyTelegramBotAPI`) that realistically simulates human conversation patterns.
 
 > **Note:** The conversational pattern engine and responses are specifically optimized for **Russian (RU)** natural dialogue.
 
@@ -8,19 +8,16 @@ A lightweight, experimental Telegram bot built with Python (`pyTelegramBotAPI`) 
 
 ## Key Features
 
-- ⏳ **Dynamic Typing & Reading Delays**  
+- **Dynamic Typing & Reading Delays**  
   Calculates realistic pauses based on incoming message length (reading delay) and outgoing message length (typing delay at ~250–300 CPM).
 
-- ⌨️ **Typo Simulation & Auto-Correction**  
+- **Auto-Correction**  
   Randomly introduces typos based on adjacent keys on the JCUKEN keyboard layout, followed by a quick correction message (`*word` or `ой, word`).
 
-- 💬 **Thought Splitting**  
-  Breaks longer thoughts into multiple sequential messages with intermediate `typing` status indicators.
-
-- 🧠 **Pattern Matching & Context Memory**  
+- **Pattern Matching & Context Memory**  
   Utilizes regular expressions to match various topics (greetings, IT, gaming, movies, philosophy, mood) while keeping track of recent answers to prevent repetition.
 
-- 🛡️ **Fault-Tolerant Polling**  
+- **Fault-Tolerant Polling**  
   Safely wraps Telegram API calls to prevent script crashes caused by users blocking the bot or deleting chats during delay intervals (`ApiTelegramException`).
 
 ---
